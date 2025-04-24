@@ -1,2 +1,3 @@
-import styles from "./home.css";
+import { loadHomePage } from "./home";
+loadHomePage();
 console.log("me");
