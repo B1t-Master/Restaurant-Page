@@ -1,6 +1,7 @@
-import styles from "./home.css";
 function loadHomePage() {
   const content = document.querySelector("#content");
+  let homeContent = document.createElement("div");
+  homeContent.classList.add("homeContent");
   let welcomeMessage = document.createElement("div");
   welcomeMessage.classList.add("welcome");
   welcomeMessage.textContent = "Welcome to Nabi's Cusine";
@@ -16,11 +17,14 @@ function loadHomePage() {
   infoDiv1.textContent = "123-45 Jeollabuk-do, South Korea";
   let infoDiv2 = document.createElement("div");
   infoDiv2.textContent = "Nabi@gmail.com";
-  content.appendChild(welcomeMessage);
-  content.appendChild(about);
-  content.appendChild(info);
+
+  homeContent.appendChild(welcomeMessage);
+  homeContent.appendChild(about);
+  homeContent.appendChild(info);
+
   info.appendChild(infoDiv1);
   info.appendChild(infoDiv2);
+  content.appendChild(homeContent);
 }
 
 export { loadHomePage };
