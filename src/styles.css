@@ -175,7 +175,7 @@ body::after {
   font-size: 3rem;
   font-weight: 900;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
   justify-content: center;
 }
 .description {
