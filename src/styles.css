@@ -22,6 +22,17 @@ nav {
   margin-top: 2rem;
   font-size: 2rem;
 }
+button {
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  margin: 0px;
+  border: 0px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.6rem;
+}
+button:hover {
+  opacity: 0.4;
+}
 #content {
   margin: 8rem 12rem;
   background-color: rgba(0, 0, 0, 0.25);
@@ -86,7 +97,7 @@ body::after {
 }
 
 .menuItem {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* border: 1px solid black; */
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -95,19 +106,26 @@ body::after {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 30, 30, 0.8),
+    rgba(60, 60, 60, 0.8)
+  );
 }
 .itemName {
   align-self: start;
   position: relative;
-  justify-self: start;
+  /* align-self: center; */
   margin-left: 1rem;
   display: flex;
   gap: 0.5rem;
   align-items: center;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0px;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
 }
 
 .itemName.nonVeg::after {
@@ -145,10 +163,34 @@ body::after {
   background-size: cover;
   align-self: center;
   border-radius: 4px;
+  filter: grayscale(100%);
+}
+.menuImage:hover {
+  transform: scale(1, 1);
+  filter: grayscale(0%);
 }
 .title {
   text-align: center;
   margin: 2rem auto 2rem auto;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 900;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
+.description {
+  margin: 2rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-wrap: balance;
+}
+
+.icon {
+  width: var(--iconSize);
+  height: var(--iconSize);
+  align-self: center;
+}
+.contact {
+  font-size: 2rem;
+  font-weight: 400;
 }

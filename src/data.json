@@ -1,0 +1,15 @@
+{
+  "title": "menu data",
+  "menu1": {
+    "name": "Korean Fried Chicken",
+    "description": "Golden, extra-crispy chicken wings double-fried to perfection, tossed in a rich, sweet and spicy glaze.Served with a cool, creamy dipping sauce for the perfect balance"
+  },
+  "menu2": {
+    "name": "Korean Hotpot",
+    "description": "A sizzling, savory stew brimming with tender slices of tofu, assorted seafood, fresh vegetables, and noodles, all simmered together in a rich, spicy broth."
+  },
+  "menu3": {
+    "name": "Bulgogi",
+    "description": "Thin slices of premium beef marinated in a sweet and savory soy-based sauce, grilled over high heat to bring out asmoky, caramelized flavor. Served with a side of fluffy rice."
+  }
+}
